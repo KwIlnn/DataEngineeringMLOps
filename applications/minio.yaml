@@ -11,7 +11,8 @@ spec:
      targetRevision: main
      path: bitnami/minio
      helm:
-      - $values/minio-values.yaml
+       valueFiles:
+       - $values/minio-values.yaml
 
   -  repoURL: https://github.com/KwIlnn/DataEngineeringMLOps.git
      targetRevision: main
