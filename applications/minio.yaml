@@ -11,7 +11,7 @@ spec:
      targetRevision: 17.0.21
      helm:
        valueFiles:
-       - $values/minio-values.yaml
+        - $values/minio-values.yaml
 
   -  repoURL: https://github.com/KwIlnn/DataEngineeringMLOps.git
      targetRevision: main
