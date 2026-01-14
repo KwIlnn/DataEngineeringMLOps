@@ -12,7 +12,7 @@ spec:
     targetRevision: main
     helm:
       valueFiles:
-        - ../../helm-values/postgres-values.yaml
+        - ../../helm-values/postgresql-values.yaml
 
   destination:
     server: https://kubernetes.default.svc
