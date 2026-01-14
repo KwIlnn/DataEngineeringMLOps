@@ -6,13 +6,13 @@ metadata:
 spec:
   project: default
 
-  sources:
-    - repoURL: https://github.com/KwIlnn/DataEngineeringMLOps.git
-      path: charts/minio
-      targetRevision: main
-      helm:
-        valueFiles:
-          - ../../helm-values/minio-values.yaml
+  source:
+    repoURL: https://github.com/KwIlnn/DataEngineeringMLOps.git
+    path: charts/minio
+    targetRevision: main
+    helm:
+      valueFiles:
+        - ../../helm-values/minio-values.yaml
 
   destination:
     server: https://kubernetes.default.svc
