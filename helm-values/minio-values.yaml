@@ -2,8 +2,9 @@ mode: standalone
 replicas: 1
 
 auth:
-  rootUser: minioadmin
-  rootPassword: minioadminpassword
+  existingSecret: minio
+  rootUserSecretKey: root-user
+  rootPasswordSecretKey: root-password
 
 global:
   security:
