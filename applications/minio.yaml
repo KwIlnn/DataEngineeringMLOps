@@ -7,16 +7,12 @@ spec:
   project: default
 
   sources:
-    - repoURL: oci://registry-1.docker.io/bitnamicharts
-      chart: minio
-      targetRevision: latest
+    - repoURL: https://github.com/KwIlnn/DataEngineeringMLOps.git
+      path: charts/minio
+      targetRevision: main
       helm:
         valueFiles:
-          - $values/helm-values/minio-values.yaml
-    - repoUrl: https://github.com/KwIlnn/DataEngineeringMLOps.git
-      targetRevision: main
-      path: helm-values
-      ref: values
+          - ../../helm-values/minio-values.yaml
 
   destination:
     server: https://kubernetes.default.svc
