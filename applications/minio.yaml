@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: minio
+  namespace: argocd
+spec:
+  project: default
+
+  sources:
+  -  repoURL: https://github.com/bitnami/charts.git
+     targetRevision: main
+     path: bitnami/minio
+     helm:
+      - $values/minio-values.yaml
+
+  -  repoURL: https://github.com/KwIlnn/DataEngineeringMLOps.git
+     targetRevision: main
+     path: helm-values
+     ref: values
+
+  
