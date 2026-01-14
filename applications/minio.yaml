@@ -8,8 +8,7 @@ spec:
 
   sources:
   -  repoURL: oci://registry-1.docker.io/bitnamicharts/minio
-     targetRevision: main
-     path: bitnami/minio
+     targetRevision: 17.0.21
      helm:
        valueFiles:
        - $values/minio-values.yaml
