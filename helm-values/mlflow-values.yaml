@@ -7,7 +7,7 @@ backendStore:
     host: "postgres-postgresql.data-storage.svc.cluster.local"
     port: 5432
     database: "ds_db"
-  existingDatabaseSecret:
+  existingSecret:
     name: "postgres-admin"
     usernameKey: "postgres-user"
     passwordKey: "postgres-password"
