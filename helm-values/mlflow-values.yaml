@@ -9,7 +9,7 @@ backendStore:
     database: "ds_db"
   existingDatabaseSecret:
     name: "postgres-admin"
-    usernameKey: "mlops"
+    usernameKey: "postgres-user"
     passwordKey: "postgres-password"
  
 artifactRoot:
