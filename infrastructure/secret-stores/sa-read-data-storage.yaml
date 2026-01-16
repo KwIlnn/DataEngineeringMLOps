@@ -9,7 +9,7 @@ kind: Role
 metadata:
   name: eso-read-data-storage-secrets
   namespace: data-storage
-roles:
+rules:
 - apiGroups: [""]
   resources:
   - secrets
