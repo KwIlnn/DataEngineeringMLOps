@@ -8,15 +8,13 @@ spec:
 
   source:
     repoURL: https://github.com/KwIlnn/DataEngineeringMLOps.git
-    path: charts/minio
+    path: infrastructure
     targetRevision: main
-    helm:
-      valueFiles:
-        - ../../helm-values/minio-values.yaml
+    directory:
+      recurse: true
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: data-storage
 
   syncPolicy:
     automated:
