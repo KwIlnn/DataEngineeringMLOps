@@ -17,12 +17,16 @@ spec:
   - repoURL: https://github.com/KwIlnn/DataEngineeringMLOps.git
     targetRevision: main
     ref: values
+      
 
   destination:
-    server: https://kubernetes.default.svc
+    server: "https://kubernetes.default.svc"
     namespace: mlops
 
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+      - Replace=true
